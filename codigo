@@ -1,0 +1,47 @@
+using System; 
+
+class Program 
+
+{ 
+
+    static void Main() 
+
+    { 
+
+        double monto, tasaInteres, tasaMensual, cuota; 
+
+        int tiempoMeses; 
+
+        Console.Write("Ingrese el monto del prestamo: "); 
+
+        monto = Convert.ToDouble(Console.ReadLine()); 
+
+        Console.Write("Ingrese la tasa de interes mensual (%): "); 
+
+        tasaInteres = Convert.ToDouble(Console.ReadLine()); 
+
+        Console.Write("Ingrese el tiempo a pagar en meses: "); 
+
+        tiempoMeses = Convert.ToInt32(Console.ReadLine()); 
+
+        tasaMensual = tasaInteres / 100; 
+
+        cuota = monto * (tasaMensual * Math.Pow(1 + tasaMensual, tiempoMeses)) / 
+
+                (Math.Pow(1 + tasaMensual, tiempoMeses) - 1); 
+
+ 
+
+        Console.WriteLine("\nRESULTADO"); 
+
+        Console.WriteLine("Monto del prestamo: " + monto); 
+
+        Console.WriteLine("Tasa de interes mensual: " + tasaInteres + "%"); 
+
+        Console.WriteLine("Tiempo a pagar: " + tiempoMeses + " meses"); 
+
+        Console.WriteLine("Cuota mensual a pagar: " + cuota.ToString("0.00")); 
+
+    } 
+
+} 
