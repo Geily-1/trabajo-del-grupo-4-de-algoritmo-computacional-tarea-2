@@ -7,7 +7,7 @@
 
 -Asignatura: Algortimo computacional
 
--Es un programa que calcula la cuota del prestamo
+-Calcula el sueldo de un empleado y determina cuanto debe pagar de ISR
 
 -Datos de entrada: 
 Sueldo anual: Variable (1,000,000)
